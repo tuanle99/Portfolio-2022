@@ -41,7 +41,7 @@ function Navbar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <Scroll type="id" element={item} offset={-64}>
+          <Scroll type="id" element={item} offset={-64} key={item}>
             <ListItem key={item} disablePadding>
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item} />

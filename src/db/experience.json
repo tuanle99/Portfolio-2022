@@ -1,0 +1,40 @@
+{
+    "work_experience": [
+        {
+            "title": "Front-End Developer",
+            "company": "Georgia Games",
+            "date": "05/2020 - 07/2020",
+            "task": [
+                "Build Georgia Games website using HTML, CSS, and JavaScript"
+            ]
+        },
+        {
+            "title": "Front-End Developer",
+            "company": "ATGWorks",
+            "date": "07/2020 - 09/2020",
+            "task": [
+                "Front-end web application using React.js",
+                "Built with TypeScript, Material UI, and React UI Framework",
+                "Work with REST APIs"
+            ]
+        },
+        {
+            "title": "Full-Stack Developer",
+            "company": "GamePlay Inc.",
+            "date": "01/2021 - 04/2021",
+            "task": [
+                "Work with ASP.NET to developed web application",
+                "Web scraping with Python and Selenium"
+            ]
+        },
+        {
+            "title": "Teaching Assistant",
+            "company": "Trilogy",
+            "date": "07/2021 - 08/2022",
+            "task": [
+                "TA for University of Miami Full-Stack Flex Web Development program.",
+                "Assist students with their project and homework during class."
+            ]
+        }
+    ]
+}
