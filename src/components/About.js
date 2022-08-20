@@ -57,7 +57,7 @@ export default function About() {
       sx={{
         flex: 1,
         backgroundColor: backgroundColor2,
-        text: textColor2,
+        color: textColor2,
       }}
     >
       <Grid
