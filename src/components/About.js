@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Grid, Typography, ImageList, ImageListItem } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  ImageList,
+  ImageListItem,
+  createTheme,
+  ThemeProvider,
+} from "@mui/material";
 import aboutmeimage from "../images/webdeveloper.jpeg";
 import basketball_gif from "../images/basketball_gif.gif";
 import coding_gif from "../images/coding_gif.gif";
@@ -32,6 +40,15 @@ const imagesData = [
   },
 ];
 
+const theme = createTheme();
+
+theme.typography.h3 = {
+  fontSize: "2.5rem",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "3rem",
+  },
+};
+
 export default function About() {
   return (
     <Grid
@@ -43,21 +60,28 @@ export default function About() {
         text: textColor2,
       }}
     >
-      <Grid item xs={12} sm={6} sx={{ padding: 10, textAlign: "center" }}>
+      <Grid
+        item
+        xs={12}
+        sm={6}
+        sx={{ padding: 6, textAlign: "center", objectFit: "contain" }}
+      >
         <img src={aboutmeimage} alt="Web developer" />
       </Grid>
       <Grid item xs={12} sm={6} sx={{}}>
         <Box sx={{ width: "80%", padding: 5, textAlign: "left" }}>
-          <Typography variant="h3">Roses Are Red</Typography>
-          <Typography variant="h3">Violet Are Blue,</Typography>
-          <Typography variant="h3">Unexpected {"'{'"}</Typography>
-          <Typography variant="h3">On Line 32</Typography>
-          <Typography variant="subtitle1" sx={{ paddingTop: 2 }}>
-            I am a detail-oriented undergraduate who like to be as efficient as
-            possible when creating a working reliable software. Whether working
-            on academic or professional projects, I apply proven
-            problem-solving, teamwork and communications skills.
-          </Typography>
+          <ThemeProvider theme={theme}>
+            <Typography variant="h3">Roses Are Red</Typography>
+            <Typography variant="h3">Violet Are Blue,</Typography>
+            <Typography variant="h3">Unexpected {"'{'"}</Typography>
+            <Typography variant="h3">On Line 32</Typography>
+            <Typography variant="subtitle1" sx={{ paddingTop: 2 }}>
+              I am a detail-oriented undergraduate who like to be as efficient
+              as possible when creating a working reliable software. Whether
+              working on academic or professional projects, I apply proven
+              problem-solving, teamwork and communications skills.
+            </Typography>
+          </ThemeProvider>
         </Box>
       </Grid>
       <Grid item xs={12} sm={6} sx={{}}>
