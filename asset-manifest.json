@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tuanle99/portfolio-2022/static/css/main.e6c13ad2.css",
-    "main.js": "/tuanle99/portfolio-2022/static/js/main.d7a39a13.js",
-    "static/js/787.d5360f6f.chunk.js": "/tuanle99/portfolio-2022/static/js/787.d5360f6f.chunk.js",
-    "static/media/basketball_gif.gif": "/tuanle99/portfolio-2022/static/media/basketball_gif.6b41bbc14f13594bfd87.gif",
-    "static/media/ramen_gif.gif": "/tuanle99/portfolio-2022/static/media/ramen_gif.cafb83fb04ae9b576975.gif",
-    "static/media/workout_gif.gif": "/tuanle99/portfolio-2022/static/media/workout_gif.feec911b2bec931c43c7.gif",
-    "static/media/coding_gif.gif": "/tuanle99/portfolio-2022/static/media/coding_gif.05f035b3a27b38553a6a.gif",
-    "static/media/webdeveloper.jpeg": "/tuanle99/portfolio-2022/static/media/webdeveloper.a1f810247587c48e456c.jpeg",
-    "index.html": "/tuanle99/portfolio-2022/index.html",
-    "main.e6c13ad2.css.map": "/tuanle99/portfolio-2022/static/css/main.e6c13ad2.css.map",
-    "main.d7a39a13.js.map": "/tuanle99/portfolio-2022/static/js/main.d7a39a13.js.map",
-    "787.d5360f6f.chunk.js.map": "/tuanle99/portfolio-2022/static/js/787.d5360f6f.chunk.js.map"
+    "main.css": "/portfolio-2022/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio-2022/static/js/main.aa93854c.js",
+    "static/js/787.d5360f6f.chunk.js": "/portfolio-2022/static/js/787.d5360f6f.chunk.js",
+    "static/media/basketball_gif.gif": "/portfolio-2022/static/media/basketball_gif.6b41bbc14f13594bfd87.gif",
+    "static/media/ramen_gif.gif": "/portfolio-2022/static/media/ramen_gif.cafb83fb04ae9b576975.gif",
+    "static/media/workout_gif.gif": "/portfolio-2022/static/media/workout_gif.feec911b2bec931c43c7.gif",
+    "static/media/coding_gif.gif": "/portfolio-2022/static/media/coding_gif.05f035b3a27b38553a6a.gif",
+    "static/media/webdeveloper.jpeg": "/portfolio-2022/static/media/webdeveloper.a1f810247587c48e456c.jpeg",
+    "index.html": "/portfolio-2022/index.html",
+    "main.e6c13ad2.css.map": "/portfolio-2022/static/css/main.e6c13ad2.css.map",
+    "main.aa93854c.js.map": "/portfolio-2022/static/js/main.aa93854c.js.map",
+    "787.d5360f6f.chunk.js.map": "/portfolio-2022/static/js/787.d5360f6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d7a39a13.js"
+    "static/js/main.aa93854c.js"
   ]
 }
