@@ -14,12 +14,7 @@ import coding_gif from "../images/coding_gif.gif";
 import ramen_gif from "../images/ramen_gif.gif";
 import workout_gif from "../images/workout_gif.gif";
 
-import {
-  backgroundColor1,
-  backgroundColor2,
-  textColor1,
-  textColor2,
-} from "./ColorScheme";
+import { backgroundColor2, textColor2 } from "./ColorScheme";
 
 const imagesData = [
   {
