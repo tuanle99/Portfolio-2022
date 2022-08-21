@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio-2022/static/css/main.51bb480d.css",
-    "main.js": "/portfolio-2022/static/js/main.b4dbab39.js",
+    "main.css": "/portfolio-2022/static/css/main.7a0679b0.css",
+    "main.js": "/portfolio-2022/static/js/main.56c05ac0.js",
     "static/js/787.d5360f6f.chunk.js": "/portfolio-2022/static/js/787.d5360f6f.chunk.js",
     "static/media/basketball_gif.gif": "/portfolio-2022/static/media/basketball_gif.6b41bbc14f13594bfd87.gif",
     "static/media/ramen_gif.gif": "/portfolio-2022/static/media/ramen_gif.cafb83fb04ae9b576975.gif",
     "static/media/workout_gif.gif": "/portfolio-2022/static/media/workout_gif.feec911b2bec931c43c7.gif",
+    "static/media/ecommerceserver.gif": "/portfolio-2022/static/media/ecommerceserver.9f7b57c9503e30d72b41.gif",
+    "static/media/Note_Taker.gif": "/portfolio-2022/static/media/Note_Taker.a8a7b5de0bf502a0a72c.gif",
     "static/media/coding_gif.gif": "/portfolio-2022/static/media/coding_gif.05f035b3a27b38553a6a.gif",
+    "static/media/gardenista.png": "/portfolio-2022/static/media/gardenista.b1dbf1c9d6653f39457f.png",
+    "static/media/pokedex.jpg": "/portfolio-2022/static/media/pokedex.6e7dde390a2790f94eae.jpg",
+    "static/media/readmegenerator.jpg": "/portfolio-2022/static/media/readmegenerator.a625603a8583042fbbba.jpg",
+    "static/media/gaitspeed.jpg": "/portfolio-2022/static/media/gaitspeed.700adb3a2d669ed078af.jpg",
     "static/media/webdeveloper.jpeg": "/portfolio-2022/static/media/webdeveloper.a1f810247587c48e456c.jpeg",
     "index.html": "/portfolio-2022/index.html",
-    "main.51bb480d.css.map": "/portfolio-2022/static/css/main.51bb480d.css.map",
-    "main.b4dbab39.js.map": "/portfolio-2022/static/js/main.b4dbab39.js.map",
+    "main.7a0679b0.css.map": "/portfolio-2022/static/css/main.7a0679b0.css.map",
+    "main.56c05ac0.js.map": "/portfolio-2022/static/js/main.56c05ac0.js.map",
     "787.d5360f6f.chunk.js.map": "/portfolio-2022/static/js/787.d5360f6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51bb480d.css",
-    "static/js/main.b4dbab39.js"
+    "static/css/main.7a0679b0.css",
+    "static/js/main.56c05ac0.js"
   ]
 }
