@@ -1,0 +1,86 @@
+{
+    "projects": [
+        {
+            "name": "E-Commerce-Server",
+            "deploy": "",
+            "github": "https://github.com/tuanle99/E-Commerce-Server",
+            "skills": [
+                "Express",
+                "JavaScript",
+                "mysql2",
+                "Rest API",
+                "Sequelize"
+            ],
+            "description": "Utilizing sequelize, express, mysql2 to create a database that can get, add, update, and delete data through API platform like Postman and Insomnia.",
+            "image": "ecommerce"
+        },
+        {
+            "name": "GaitSpeed",
+            "deploy": "",
+            "github": "https://github.com/tuanle99/gaitspeed",
+            "skills": [
+                "android",
+                "expo",
+                "ios",
+                "React-Native"
+            ],
+            "description": "GaitSpeed is a mobile application that measure the movement speed of elderly, record them, and display them on the application, also showing how their speed is correlated to their current health status.",
+            "image": "gaitspeed"
+        },
+        {
+            "name": "Gardenista",
+            "deploy": "https://afternoon-plains-76393.herokuapp.com/",
+            "github": "https://github.com/acbewley/project-3-gardenista#Technologies",
+            "skills": [
+                "Ajax",
+                "Bootstrap",
+                "MongoDB",
+                "Mongoose",
+                "Node",
+                "React"
+            ],
+            "description": "Gardenista is a web application that allows verfied users to track their garden plants, schedule watering days, view weather in their location, and write web journal entries.",
+            "image": "gardenista"
+        },
+        {
+            "name": "Note-Taker",
+            "deploy": "https://bootcamp-homework-note-taker.herokuapp.com/",
+            "github": "https://github.com/tuanle99/Note-Taker",
+            "skills": [
+                "Bootstrap",
+                "CSS",
+                "Express",
+                "fs",
+                "HTML",
+                "JavaScript",
+                "Rest API"
+            ],
+            "description": "Note-Taker is a web application that allow user to record their note and save them to look back at later.",
+            "image": "notetaker"
+        },
+        {
+            "name": "Pokedex",
+            "deploy": "https://tuanle99.github.io/pokedex/",
+            "github": "https://github.com/tuanle99/pokedex",
+            "skills": [
+                "Api",
+                "Material UI",
+                "React"
+            ],
+            "description": "Pokedex is a web application that the user can freely search for a pokemon and see its stats and skills.",
+            "image": "pokedex"
+        },
+        {
+            "name": "README Generator",
+            "deploy": "",
+            "github": "https://github.com/tuanle99/README-Generator",
+            "skills": [
+                "fs",
+                "inquirer",
+                "JavaScript"
+            ],
+            "description": "Through the terminal, the user can enter information being asked, then the software will generate a README.md with all the information enter.",
+            "image": "readme"
+        }
+    ]
+}

@@ -57,19 +57,19 @@ export default function About() {
     >
       <Grid
         item
-        xs={12}
-        sm={6}
+        sm={12}
+        md={6}
         sx={{ padding: 6, textAlign: "center", objectFit: "contain" }}
       >
         <img src={aboutmeimage} alt="Web developer" />
       </Grid>
       <Grid item xs={12} sm={6} sx={{}}>
-        <Box sx={{ width: "100%", padding: 5, textAlign: "left" }}>
+        <Box sx={{ width: "100%", padding: 5, textAlign: "center" }}>
           <ThemeProvider theme={theme}>
             <Typography variant="h3">Roses Are Red</Typography>
             <Typography variant="h3">Violet Are Blue,</Typography>
-            <Typography variant="h3">Unexpected {"'{'"}</Typography>
-            <Typography variant="h3">On Line 32</Typography>
+            <Typography variant="h3">Unexpected {"'{'"} On Line 32</Typography>
+
             <Typography variant="subtitle1" sx={{ paddingTop: 2 }}>
               I am a detail-oriented undergraduate who like to be as efficient
               as possible when creating a working reliable software. Whether
@@ -79,7 +79,7 @@ export default function About() {
           </ThemeProvider>
         </Box>
       </Grid>
-      <Grid item xs={12} sm={6} sx={{}}>
+      <Grid item sm={12} md={6} sx={{}}>
         <Box sx={{ width: "100%", padding: 5, textAlign: "center" }}>
           <Typography variant="h3">A little bit about me</Typography>
           <Typography variant="subtitle1" sx={{ paddingTop: 2 }}>
@@ -93,8 +93,21 @@ export default function About() {
           </Typography>
         </Box>
       </Grid>
-      <Grid item xs={12} sm={6} sx={{ textAlign: "center" }}>
-        <ImageList sx={{ width: 400, height: 350 }} cols={2} rowHeight={164}>
+      <Grid
+        item
+        sm={12}
+        md={6}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <ImageList
+          sx={{ width: { sm: "100%", md: "50%", lg: "50%" }, height: "100%" }}
+          cols={2}
+          rowHeight={164}
+        >
           {imagesData.map((item) => (
             <ImageListItem key={item.img}>
               <img
