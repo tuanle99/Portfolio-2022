@@ -14,7 +14,7 @@ import coding_gif from "../images/coding_gif.gif";
 import ramen_gif from "../images/ramen_gif.gif";
 import workout_gif from "../images/workout_gif.gif";
 
-import { backgroundColor2, textColor2 } from "./ColorScheme";
+import { backgroundColor2, textColor2 } from "./css/ColorScheme";
 
 const imagesData = [
   {
@@ -64,7 +64,7 @@ export default function About() {
         <img src={aboutmeimage} alt="Web developer" />
       </Grid>
       <Grid item xs={12} sm={6} sx={{}}>
-        <Box sx={{ width: "80%", padding: 5, textAlign: "left" }}>
+        <Box sx={{ width: "100%", padding: 5, textAlign: "left" }}>
           <ThemeProvider theme={theme}>
             <Typography variant="h3">Roses Are Red</Typography>
             <Typography variant="h3">Violet Are Blue,</Typography>
@@ -80,7 +80,7 @@ export default function About() {
         </Box>
       </Grid>
       <Grid item xs={12} sm={6} sx={{}}>
-        <Box sx={{ width: "80%", padding: 5, textAlign: "center" }}>
+        <Box sx={{ width: "100%", padding: 5, textAlign: "center" }}>
           <Typography variant="h3">A little bit about me</Typography>
           <Typography variant="subtitle1" sx={{ paddingTop: 2 }}>
             I enjoy a workout and playing basketball. Sweating is the best way

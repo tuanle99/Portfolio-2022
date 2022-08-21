@@ -8,7 +8,14 @@ import {
   useSpringRef,
 } from "@react-spring/web";
 
-import styles from "./styles.module.css";
+import styles from "./css/styles.module.css";
+import {
+  backgroundColor1,
+  backgroundColor2,
+  textColor1,
+  textColor2,
+} from "./css/ColorScheme";
+import { Box } from "@mui/system";
 
 const data = [
   {
@@ -45,10 +52,9 @@ export default function App() {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { size: "20%", background: "hotpink" },
+    from: { size: "20%" },
     to: {
       size: open ? "100%" : "20%",
-      background: open ? "white" : "hotpink",
       display: open ? "grid" : "block",
       padding: open ? 25 : 0,
     },
@@ -76,16 +82,28 @@ export default function App() {
   ]);
 
   return (
-    <div className={styles.wrapper}>
+    <Box
+      className={styles.wrapper}
+      style={{ backgroundColor: backgroundColor2 }}
+      id="Project"
+    >
       <animated.div
-        style={{ ...rest, width: size, height: size }}
+        style={{
+          ...rest,
+          height: size,
+          background: backgroundColor1,
+          color: textColor1,
+        }}
         className={styles.container}
-        onClick={() => set((open) => !open)}
+        onClick={() => set(true)}
       >
         {text === "" ? null : (
-          <div>
-            <h3>{text}</h3>
-            <h4>Click Here to View My Project!</h4>
+          <div
+            style={{
+              justifyContent: "center",
+            }}
+          >
+            <h2>Click Here to View My Project!</h2>
           </div>
         )}
 
@@ -98,6 +116,6 @@ export default function App() {
           </animated.div>
         ))}
       </animated.div>
-    </div>
+    </Box>
   );
 }
