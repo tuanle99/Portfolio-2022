@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-2022/static/css/main.cfc1593e.css",
-    "main.js": "/portfolio-2022/static/js/main.5f596a1c.js",
+    "main.css": "/portfolio-2022/static/css/main.51bb480d.css",
+    "main.js": "/portfolio-2022/static/js/main.b4dbab39.js",
     "static/js/787.d5360f6f.chunk.js": "/portfolio-2022/static/js/787.d5360f6f.chunk.js",
     "static/media/basketball_gif.gif": "/portfolio-2022/static/media/basketball_gif.6b41bbc14f13594bfd87.gif",
     "static/media/ramen_gif.gif": "/portfolio-2022/static/media/ramen_gif.cafb83fb04ae9b576975.gif",
@@ -9,12 +9,12 @@
     "static/media/coding_gif.gif": "/portfolio-2022/static/media/coding_gif.05f035b3a27b38553a6a.gif",
     "static/media/webdeveloper.jpeg": "/portfolio-2022/static/media/webdeveloper.a1f810247587c48e456c.jpeg",
     "index.html": "/portfolio-2022/index.html",
-    "main.cfc1593e.css.map": "/portfolio-2022/static/css/main.cfc1593e.css.map",
-    "main.5f596a1c.js.map": "/portfolio-2022/static/js/main.5f596a1c.js.map",
+    "main.51bb480d.css.map": "/portfolio-2022/static/css/main.51bb480d.css.map",
+    "main.b4dbab39.js.map": "/portfolio-2022/static/js/main.b4dbab39.js.map",
     "787.d5360f6f.chunk.js.map": "/portfolio-2022/static/js/787.d5360f6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfc1593e.css",
-    "static/js/main.5f596a1c.js"
+    "static/css/main.51bb480d.css",
+    "static/js/main.b4dbab39.js"
   ]
 }
