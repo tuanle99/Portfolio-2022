@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Box,
   Card,
@@ -46,7 +47,7 @@ export default function Renderproject({ item }) {
       sx={{
         display: { sm: "block", md: "flex" },
         color: textColor2,
-        height: { sm: "100%", md: "400px" },
+        height: "100%",
         justifyContent: "space-between",
         backgroundColor: backgroundColor1,
       }}
@@ -57,66 +58,74 @@ export default function Renderproject({ item }) {
           width: { sm: "100%", md: "49%" },
           objectFit: "fill",
           borderRadius: 1,
+          maxHeight: 500,
         }}
         image={renderimg(item.image)}
         alt={item.name}
       />
+
+      <Item item={item} />
+    </Card>
+  );
+}
+
+function Item({ item }) {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { sm: "100%", md: "49%" },
+        backgroundColor: backgroundColor2,
+        borderRadius: 1,
+      }}
+    >
+      <CardContent sx={{ flex: "1 0 auto" }}>
+        <Typography component="div" variant="h4">
+          {item.name}
+        </Typography>
+        <Typography variant="subtitle1" component="div">
+          {item.description}
+        </Typography>
+        <Box sx={{ textAlign: "left", p: { sm: 1, md: 3 }, pt: 1 }}>
+          <Typography variant="h5">
+            Technologies use in this project:
+          </Typography>
+          {item.skills.map((skill) => {
+            return <Chip key={skill} label={skill} sx={{ m: 0.5 }} />;
+          })}
+        </Box>
+      </CardContent>
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
-          width: { sm: "100%", md: "49%" },
-          backgroundColor: backgroundColor2,
-          borderRadius: 1,
+          justifyContent: "center",
+          p: 2,
+          backgroundColor: backgroundColor1,
         }}
       >
-        <CardContent sx={{ flex: "1 0 auto" }}>
-          <Typography component="div" variant="h4">
-            {item.name}
-          </Typography>
-          <Typography variant="subtitle1" component="div">
-            {item.description}
-          </Typography>
-          <Box sx={{ textAlign: "left", p: { sm: 1, md: 3 }, pt: 1 }}>
-            <Typography variant="h5">
-              Technologies use in this project:
-            </Typography>
-            {item.skills.map((skill) => {
-              return <Chip key={skill} label={skill} sx={{ m: 0.5 }} />;
-            })}
-          </Box>
-        </CardContent>
-        <Box
+        <Button
+          variant="contained"
+          href={item.github}
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            p: 2,
-            backgroundColor: backgroundColor1,
+            backgroundColor: textColor1,
+            m: item.deploy !== "" ? 1 : 0,
           }}
+          target="_blank"
         >
+          Github
+        </Button>
+        {item.deploy !== "" ? (
           <Button
             variant="contained"
-            href={item.github}
-            sx={{
-              backgroundColor: textColor1,
-              m: item.deploy !== "" ? 1 : 0,
-            }}
+            href={item.deploy}
+            sx={{ backgroundColor: textColor1, m: 1 }}
             target="_blank"
           >
-            Github
+            Deploy
           </Button>
-          {item.deploy !== "" ? (
-            <Button
-              variant="contained"
-              href={item.deploy}
-              sx={{ backgroundColor: textColor1, m: 1 }}
-              target="_blank"
-            >
-              Deploy
-            </Button>
-          ) : null}
-        </Box>
+        ) : null}
       </Box>
-    </Card>
+    </Box>
   );
 }
