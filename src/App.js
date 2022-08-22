@@ -1,13 +1,11 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./pages/Navbar";
 
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-
-import Home from "./components/Home";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Project from "./components/Project";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Resume from "./pages/Resume";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 function App() {
   return (

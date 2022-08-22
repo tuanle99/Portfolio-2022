@@ -14,7 +14,7 @@ import coding_gif from "../images/coding_gif.gif";
 import ramen_gif from "../images/ramen_gif.gif";
 import workout_gif from "../images/workout_gif.gif";
 
-import { backgroundColor2, textColor2 } from "./css/ColorScheme";
+import { backgroundColor2, textColor2 } from "../css/ColorScheme";
 
 const imagesData = [
   {
@@ -63,7 +63,7 @@ export default function About() {
       >
         <img src={aboutmeimage} alt="Web developer" />
       </Grid>
-      <Grid item xs={12} sm={6} sx={{}}>
+      <Grid item sm={12} md={6} sx={{}}>
         <Box sx={{ width: "100%", padding: 5, textAlign: "center" }}>
           <ThemeProvider theme={theme}>
             <Typography variant="h3">Roses Are Red</Typography>
@@ -104,7 +104,7 @@ export default function About() {
         }}
       >
         <ImageList
-          sx={{ width: { sm: "100%", md: "50%", lg: "50%" }, height: "100%" }}
+          sx={{ width: { sm: "100%", md: "50%" }, height: "100%" }}
           cols={2}
           rowHeight={164}
         >
