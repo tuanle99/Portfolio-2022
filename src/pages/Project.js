@@ -13,7 +13,7 @@ import {
   backgroundColor1,
   backgroundColor2,
   textColor1,
-} from "../css/ColorScheme";
+} from "../css/Globalvar";
 import { Box, Button } from "@mui/material";
 
 import projects from "../db/projects.json";

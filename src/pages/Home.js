@@ -1,9 +1,9 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 export default function Home() {
   return (
-    <Box id="Home" sx={{ height: 300, backgroundColor: "lightblue" }}>
+    <Box id="Home" sx={{ height: 600, backgroundColor: "lightblue" }}>
       Home
     </Box>
   );

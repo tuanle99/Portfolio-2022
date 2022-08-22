@@ -14,7 +14,7 @@ import {
   backgroundColor2,
   textColor1,
   textColor2,
-} from "../css/ColorScheme";
+} from "../css/Globalvar";
 
 import gardenista from "../images/gardenista.png";
 import pokedex from "../images/pokedex.jpg";
