@@ -83,7 +83,7 @@ export default function App() {
               justifyContent: "center",
             }}
           >
-            <h2>Click Here to View My Project!</h2>
+            <h3>Click Here to View My Project!</h3>
           </div>
         )}
 
