@@ -143,6 +143,9 @@ function Navbar(props) {
             ".css-4t3x6l-MuiPaper-root-MuiDrawer-paper": {
               backgroundColor: backgroundColor1,
             },
+            ".css-wf16b5": {
+              backgroundColor: backgroundColor1,
+            },
           }}
         >
           {drawer}
