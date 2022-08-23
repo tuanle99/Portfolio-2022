@@ -42,6 +42,9 @@ function Navbar(props) {
         textAlign: "center",
         backgroundColor: backgroundColor1,
         color: "white",
+        ".css-wf16b5": {
+          backgroundColor: backgroundColor1,
+        },
       }}
     >
       <Typography variant="h6" sx={{ my: 2 }}>
