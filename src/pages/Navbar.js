@@ -139,13 +139,14 @@ function Navbar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-            },
-            ".css-4t3x6l-MuiPaper-root-MuiDrawer-paper": {
               backgroundColor: backgroundColor1,
             },
-            ".css-1mzasw .MuiDrawer-paper": {
-              backgroundColor: backgroundColor1,
-            },
+            // ".css-4t3x6l-MuiPaper-root-MuiDrawer-paper": {
+            //   backgroundColor: backgroundColor1,
+            // },
+            // ".css-1mzasw .MuiDrawer-paper": {
+            //   backgroundColor: backgroundColor1,
+            // },
           }}
         >
           {drawer}
