@@ -42,9 +42,6 @@ function Navbar(props) {
         textAlign: "center",
         backgroundColor: backgroundColor1,
         color: "white",
-        ".css-wf16b5": {
-          backgroundColor: backgroundColor1,
-        },
       }}
     >
       <Typography variant="h6" sx={{ my: 2 }}>
@@ -146,7 +143,7 @@ function Navbar(props) {
             ".css-4t3x6l-MuiPaper-root-MuiDrawer-paper": {
               backgroundColor: backgroundColor1,
             },
-            ".css-wf16b5": {
+            ".css-1mzasw ": {
               backgroundColor: backgroundColor1,
             },
           }}
