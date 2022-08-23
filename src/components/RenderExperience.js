@@ -19,7 +19,16 @@ export default function RenderExperience() {
             }}
             key={e.date}
           >
-            <Grid item md={5} xs={12} sx={{ textAlign: { md: "right" }, p: 2 }}>
+            <Grid
+              item
+              md={5}
+              xs={12}
+              sx={{
+                textAlign: { md: "right" },
+                p: 2,
+                display: { md: "block", xs: "none" },
+              }}
+            >
               <Fade direction="left">
                 <Typography variant="h5">{e.title}</Typography>
                 <Typography variant="subtitle1">{e.date}</Typography>
@@ -41,6 +50,21 @@ export default function RenderExperience() {
             <Grid item md={6} xs={12} sx={{ textAlign: { md: "left" }, p: 2 }}>
               <Fade direction="right">
                 <Typography variant="h4">{e.company}</Typography>
+                <Grid
+                  item
+                  md={5}
+                  xs={12}
+                  sx={{
+                    textAlign: { md: "right" },
+                    p: 2,
+                    display: { md: "none", xs: "block" },
+                  }}
+                >
+                  <Fade direction="left">
+                    <Typography variant="h5">{e.title}</Typography>
+                    <Typography variant="subtitle1">{e.date}</Typography>
+                  </Fade>
+                </Grid>
                 {e.task.map((x) => {
                   return (
                     <Box key={x} sx={{ textAlign: { xs: "left" } }}>

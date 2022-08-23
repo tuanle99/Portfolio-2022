@@ -5,7 +5,9 @@
             "company": "Georgia Games",
             "date": "05/2020 - 07/2020",
             "task": [
-                "Build Georgia Games website using HTML, CSS, and JavaScript"
+                "Build Georgia Games website using HTML, CSS, and JavaScript",
+                "Optimize user interface for best user experience",
+                "UX/UI design"
             ]
         },
         {
@@ -24,7 +26,8 @@
             "date": "01/2021 - 04/2021",
             "task": [
                 "Work with ASP.NET to developed web application",
-                "Web scraping with Python and Selenium"
+                "Web scraping with Python and Selenium",
+                "Optimize user interface for best user experience"
             ]
         },
         {
@@ -32,8 +35,9 @@
             "company": "Trilogy",
             "date": "07/2021 - 08/2022",
             "task": [
-                "TA for University of Miami Full-Stack Flex Web Development program.",
-                "Assist students with their project and homework during class."
+                "TA for University of Miami Full-Stack Flex Web Development program",
+                "Assist students with their project and homework during class",
+                "Reviewing and debugging students code"
             ]
         }
     ]

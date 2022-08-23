@@ -25,8 +25,12 @@ export default function RenderEducation() {
         return (
           <Box key={e.date} sx={{ mt: 5 }}>
             <Fade direction={findIndex(e.date)}>
-              <Typography variant="h4">{e.degree}</Typography>
-              <Typography variant="h5">{e.school}</Typography>
+              <Typography variant="h4" sx={{ m: 1 }}>
+                {e.degree}
+              </Typography>
+              <Typography variant="h5" sx={{ m: 1 }}>
+                {e.school}
+              </Typography>
               <Typography variant="subtitle1">{e.date}</Typography>
             </Fade>
           </Box>
