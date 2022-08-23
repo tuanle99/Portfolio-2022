@@ -17,6 +17,8 @@ import {
 } from "@mui/material";
 import Scroll from "react-scroll-to-element";
 
+import { backgroundColor1 } from "../css/Globalvar";
+
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Resume", "Project", "Contact"];
 const navTitle = "Tuan Le";
@@ -34,11 +36,18 @@ function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: "center",
+        backgroundColor: backgroundColor1,
+        color: "white",
+      }}
+    >
       <Typography variant="h6" sx={{ my: 2 }}>
         {navTitle}
       </Typography>
-      <Divider />
+      <Divider sx={{ backgroundColor: "white" }} />
       <List>
         {navItems.map((item) => (
           <Scroll type="id" element={item} offset={-64} key={item}>
@@ -57,8 +66,18 @@ function Navbar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <AppBar component="nav" sx={{ minHeight: 64 }}>
+    <Box
+      sx={{
+        display: "flex",
+      }}
+    >
+      <AppBar
+        component="nav"
+        sx={{
+          minHeight: 64,
+          backgroundColor: backgroundColor1,
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -89,7 +108,7 @@ function Navbar(props) {
             {navItems.map((item) => (
               <Button
                 key={item}
-                sx={{ color: "#fff" }}
+                sx={{ color: "white" }}
                 value={item}
                 onClick={handleScroll}
               >
@@ -101,7 +120,12 @@ function Navbar(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav" sx={{ minHeight: 64 }}>
+      <Box
+        component="nav"
+        sx={{
+          minHeight: 64,
+        }}
+      >
         <Drawer
           container={container}
           variant="temporary"
@@ -115,6 +139,9 @@ function Navbar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+            },
+            ".css-4t3x6l-MuiPaper-root-MuiDrawer-paper": {
+              backgroundColor: backgroundColor1,
             },
           }}
         >

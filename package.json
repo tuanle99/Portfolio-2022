@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "react-scroll-to-element": "^0.2.0",
     "react-slide-fade-in": "^1.0.7",
+    "react-spinners": "^0.13.4",
     "react-spring": "^9.5.2",
     "sass": "^1.54.5",
     "web-vitals": "^2.1.4"

@@ -129,7 +129,7 @@ export default function Contact() {
                 }}
               >
                 <ThemeProvider theme={theme}>
-                  <Typography variant="h5" sx={{ p: { md: 2, xs: 1 } }}>
+                  <Typography variant="h5" sx={{ p: { md: 2, xs: 2 } }}>
                     Question? Leave me a message and I will get back to you as
                     soon as possible!
                   </Typography>
@@ -150,7 +150,7 @@ export default function Contact() {
                     name="message"
                     sx={{ display: "flex", m: 2 }}
                   />
-                  <Button type="submit" sx={{ m: 1 }}>
+                  <Button variant="contained" type="submit" sx={{ m: 1 }}>
                     Submit
                   </Button>
                 </form>

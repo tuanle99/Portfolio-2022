@@ -15,7 +15,7 @@ import coding_gif from "../images/coding_gif.gif";
 import ramen_gif from "../images/ramen_gif.gif";
 import workout_gif from "../images/workout_gif.gif";
 
-import { backgroundColor2, textColor2 } from "../css/Globalvar";
+import { backgroundColor1, textColor1 } from "../css/Globalvar";
 import personalinfo from "../db/personalinfo.json";
 
 const imagesData = [
@@ -53,8 +53,8 @@ export default function About() {
       id="About"
       sx={{
         flex: 1,
-        backgroundColor: backgroundColor2,
-        color: textColor2,
+        backgroundColor: backgroundColor1,
+        color: textColor1,
       }}
     >
       <Grid
@@ -77,7 +77,10 @@ export default function About() {
                 Unexpected {"'{'"} On Line 32
               </Typography>
 
-              <Typography variant="subtitle1" sx={{ paddingTop: 2 }}>
+              <Typography
+                variant="subtitle1"
+                sx={{ paddingTop: 2, fontSize: 20 }}
+              >
                 {personalinfo.pitch}
               </Typography>
             </ThemeProvider>
@@ -88,7 +91,10 @@ export default function About() {
         <Fade direction="left">
           <Box sx={{ width: "100%", padding: 5, textAlign: "center" }}>
             <Typography variant="h3">A little bit about me</Typography>
-            <Typography variant="subtitle1" sx={{ paddingTop: 2 }}>
+            <Typography
+              variant="subtitle1"
+              sx={{ paddingTop: 2, fontSize: 20 }}
+            >
               {personalinfo.about_me}
             </Typography>
           </Box>

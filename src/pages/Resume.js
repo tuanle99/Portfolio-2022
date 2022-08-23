@@ -1,20 +1,30 @@
-import React, { useRef } from "react";
-import { Box } from "@mui/material";
+import React from "react";
+import { Box, Typography } from "@mui/material";
 
-import { useIsInViewport } from "../util/Helper";
+import RenderExperience from "../components/RenderExperience";
+import RenderEducation from "../components/RenderEducation";
+
+import { backgroundColor2, textColor2 } from "../css/Globalvar";
 
 export default function Resume() {
-  const ref1 = useRef(null);
-
-  const isInViewport1 = useIsInViewport(ref1);
-  // console.log("isInViewport1: ", isInViewport1);
   return (
     <Box
-      ref={ref1}
       id="Resume"
-      sx={{ height: 300, backgroundColor: "lightblue" }}
+      sx={{
+        backgroundColor: backgroundColor2,
+        color: textColor2,
+        textAlign: "center",
+        p: 5,
+      }}
     >
-      Resume
+      <Typography variant="h3" sx={{ mb: 5 }}>
+        Experience
+      </Typography>
+      <RenderExperience />
+      <Typography variant="h3" sx={{ mb: 5, mt: 5 }}>
+        Education
+      </Typography>
+      <RenderEducation />
     </Box>
   );
 }

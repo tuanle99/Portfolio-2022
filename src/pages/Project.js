@@ -17,7 +17,7 @@ import {
 import { Box, Button } from "@mui/material";
 
 import projects from "../db/projects.json";
-import Renderproject from "../components/Renderproject";
+import Renderproject from "../components/RenderProject";
 
 export default function App() {
   const [open, set] = useState(false);
