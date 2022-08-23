@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   Box,
   Grid,
@@ -31,27 +31,44 @@ theme.typography.h5 = {
 };
 
 export default function Contact() {
+  const [sendMessage, setSendMessage] = useState("");
+  const [sendError, setSendError] = useState(false);
   const form = useRef();
   const iconSize = 100;
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const { name, subject, message } = e.target;
 
-    emailjs
-      .sendForm(
-        "service_7dxy7fy",
-        "template_hn0vkch",
-        form.current,
-        "ajQO3mSzeRGSq_-s1"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (name.value !== "" && subject.value !== "" && message.value !== "") {
+      emailjs
+        .sendForm(
+          "service_7dxy7fy",
+          "template_hn0vkch",
+          form.current,
+          "ajQO3mSzeRGSq_-s1"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setSendError(false);
+            setSendMessage("Your message has been sent successfully.");
+            name.value = "";
+            subject.value = "";
+            message.value = "";
+          },
+          (error) => {
+            console.log(error.text);
+            setSendError(true);
+            setSendMessage(
+              "Please try again or email me directly at tuanleprofessional@gmail.com."
+            );
+          }
+        );
+    } else {
+      setSendError(true);
+      setSendMessage("Please fill in all the required fields.");
+    }
   };
 
   return (
@@ -136,20 +153,27 @@ export default function Contact() {
                 </ThemeProvider>
                 <form ref={form} onSubmit={sendEmail}>
                   <TextField
-                    label="Name"
+                    label="Name *"
                     name="name"
                     sx={{ display: "flex", m: 2 }}
                   />
                   <TextField
-                    label="Subject"
+                    label="Subject *"
                     name="subject"
                     sx={{ display: "flex", m: 2 }}
                   />
                   <TextField
-                    label="Message"
+                    label="Message *"
                     name="message"
                     sx={{ display: "flex", m: 2 }}
                   />
+                  {sendMessage === "" ? null : sendError ? (
+                    <Typography sx={{ color: "red" }}>{sendMessage}</Typography>
+                  ) : (
+                    <Typography sx={{ color: "green" }}>
+                      {sendMessage}
+                    </Typography>
+                  )}
                   <Button variant="contained" type="submit" sx={{ m: 1 }}>
                     Submit
                   </Button>
