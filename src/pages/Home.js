@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, createTheme, ThemeProvider } from "@mui/material";
+import TypeWriterEffect from "react-typewriter-effect";
 
 import { useWindowDimensions } from "../util/Helper";
 import { backgroundColor2, textColor2 } from "../css/Globalvar";
@@ -14,8 +15,9 @@ theme.typography.h3 = {
 };
 
 export default function Home() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   const backgroundHeight = height * 0.8;
+
   return (
     <Box
       id="Home"
@@ -29,7 +31,16 @@ export default function Home() {
       }}
     >
       <ThemeProvider theme={theme}>
-        <Typography variant="h3">Full-Stack Developer</Typography>
+        <Typography variant="h3">
+          <TypeWriterEffect
+            textStyle={{ fontFamily: "Red Hat Display" }}
+            startDelay={100}
+            cursorColor="black"
+            text="Full-Stack Developer"
+            typeSpeed={100}
+            // scrollArea={myAppRef}
+          />
+        </Typography>
       </ThemeProvider>
     </Box>
   );
