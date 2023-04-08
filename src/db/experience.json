@@ -1,33 +1,36 @@
 {
     "work_experience": [
         {
-            "title": "Front-End Developer",
+            "title": "Intern",
             "company": "Georgia Games",
             "date": "05/2020 - 07/2020",
             "task": [
-                "Build Georgia Games website using HTML, CSS, and JavaScript",
-                "Optimize user interface for best user experience",
-                "UX/UI design"
+                "Recreate Georgia Games website using HTML, CSS, and JavaScript",
+                "Optimize user interface for best user experience and responsive design.",
+                "UX/UI design",
+                "Key achievement: Delivered a working responsive web application with all sport events showing up to date information."
             ]
         },
         {
-            "title": "Front-End Developer",
+            "title": "Intern",
             "company": "ATGWorks",
             "date": "07/2020 - 09/2020",
             "task": [
-                "Front-End web application using React.js",
-                "Built with TypeScript, Material UI, and React UI Framework",
-                "Work with REST APIs"
+                "Developed web application using React JavaScript library",
+                "The project developed using Typescript and Material-UI, React UI framework.",
+                "Work with REST APIs",
+                "Key achievement: Successfully creating responsive web pages with React.js and connecting the front-end to the back-end with REST APIs."
             ]
         },
         {
-            "title": "Full-Stack Developer",
+            "title": "Intern",
             "company": "GamePlay Inc.",
             "date": "01/2021 - 04/2021",
             "task": [
-                "Work with ASP.NET to developed web application",
-                "Web scraping with Python and Selenium",
-                "Optimize user interface for best user experience"
+                "Developed web application using ASP.NET.",
+                "Web scraping with Python and Selenium.",
+                "Optimize user interface for best user experience.",
+                "Key achievement: Creating a program that able to retrieve information on a website and saving to a database."
             ]
         },
         {
@@ -37,7 +40,8 @@
             "task": [
                 "TA for the University of Miami Full-Stack Flex Web Development program",
                 "Assist students with their projects and homework during class",
-                "Reviewing and debugging student's code"
+                "Reviewing and debugging student's code",
+                "Subject include Bootstrap, CSS, Express.js, HTML, JavaScript, jQuery, MongoDB, MySQL, Node.js, React.js"
             ]
         }
     ]
