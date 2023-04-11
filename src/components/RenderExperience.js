@@ -30,6 +30,7 @@ export default function RenderExperience() {
               }}
             >
               <Fade direction="left">
+                <Typography variant="h4">{e.company}</Typography>
                 <Typography variant="h5">{e.title}</Typography>
                 <Typography variant="subtitle1">{e.date}</Typography>
               </Fade>
