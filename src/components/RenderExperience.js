@@ -17,7 +17,7 @@ export default function RenderExperience() {
             sx={{
               display: "flex",
             }}
-            key={e.date}
+            key={e.company}
           >
             <Grid
               item
@@ -30,9 +30,17 @@ export default function RenderExperience() {
               }}
             >
               <Fade direction="left">
-                <Typography variant="h4">{e.company}</Typography>
                 <Typography variant="h5">{e.title}</Typography>
-                <Typography variant="subtitle1">{e.date}</Typography>
+                {e.time.map((d) => {
+                  return (
+                    <Typography variant="body1" key={d.date}>
+                      {d.date} | {d.location}
+                    </Typography>
+                  );
+                })}
+                <Typography variant="body2" sx={{ fontStyle: "italic" }}>
+                  {e.skills}
+                </Typography>
               </Fade>
             </Grid>
             <Grid
@@ -63,13 +71,25 @@ export default function RenderExperience() {
                 >
                   <Fade direction="left">
                     <Typography variant="h5">{e.title}</Typography>
-                    <Typography variant="subtitle1">{e.date}</Typography>
+                    {e.time.map((d) => {
+                      return (
+                        <div key={d.date}>
+                          <Typography variant="subtitle1">{d.date}</Typography>
+                          <Typography variant="subtitle1">
+                            {d.location}
+                          </Typography>
+                        </div>
+                      );
+                    })}
+                    <Typography variant="body2" sx={{ fontStyle: "italic" }}>
+                      {e.skills}
+                    </Typography>
                   </Fade>
                 </Grid>
                 {e.task.map((x) => {
                   return (
                     <Box key={x} sx={{ textAlign: { xs: "left" } }}>
-                      <Typography key={x} variant="subtitle1">
+                      <Typography key={x} variant="body1">
                         - {x}
                       </Typography>
                     </Box>

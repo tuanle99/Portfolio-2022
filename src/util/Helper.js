@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export function useIsInViewport(ref) {
   const [isIntersecting, setIsIntersecting] = useState(false);

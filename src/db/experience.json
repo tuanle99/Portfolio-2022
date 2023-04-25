@@ -1,47 +1,89 @@
 {
     "work_experience": [
         {
-            "title": "Intern",
-            "company": "Georgia Games",
-            "date": "05/2020 - 07/2020",
-            "task": [
-                "Recreate Georgia Games website using HTML, CSS, and JavaScript",
-                "Optimize user interface for best user experience and responsive design.",
-                "UX/UI design",
-                "Key achievement: Delivered a working responsive web application with all sport events showing up to date information."
-            ]
-        },
-        {
-            "title": "Intern",
-            "company": "ATGWork",
-            "date": "07/2020 - 09/2020",
-            "task": [
-                "Developed web application using React JavaScript library",
-                "The project developed using Typescript and Material-UI, React UI framework.",
-                "Work with REST APIs",
-                "Key achievement: Successfully creating responsive web pages with React.js and connecting the front-end to the back-end with REST APIs."
-            ]
-        },
-        {
-            "title": "Intern",
+            "title": " Software Developer Intern",
             "company": "GamePlay Inc.",
-            "date": "01/2021 - 04/2021",
+            "time": [
+                {
+                    "date": "January 2021 – April 2021",
+                    "location": "San Francisco, CA"
+                }
+            ],
+            "skills": "ASP.NET, Python, Selenium",
             "task": [
-                "Developed web application using ASP.NET.",
-                "Web scraping with Python and Selenium.",
-                "Optimize user interface for best user experience.",
-                "Key achievement: Creating a program that able to retrieve information on a website and saving to a database."
+                "Developed and maintained GamePlay web application.",
+                "Creating and deploying web scraping software for collecting data and saving it to a local file.",
+                "Optimize user interface for best user experience and responsive design.",
+                "Key achievements: Designed and developed web scraping software that extracted data for GamePlay web application and rendered it on the frontend."
+            ]
+        },
+        {
+            "title": "React Developer Intern",
+            "company": "ATGWork",
+            "time": [
+                {
+                    "date": "July 2020 – September 2020",
+                    "location": "Sandy Spring, GA"
+                }
+            ],
+            "skills": "React.js, Typescript, Material-UI, REST APIs, Ajax, JIRA",
+            "task": [
+                "Created and implemented webpages in accordance with the company's products and services.",
+                "Participated in agile development methodology, including daily stand-up meetings, sprint planning, and retrospectives.",
+                "Worked with back-end servers to develop and maintain APIs for the front-end application.",
+                "Key achievements: Engineered responsive web pages with REST API integration to enable dynamic and real-time data interaction."
+            ]
+        },
+        {
+            "title": "Front-End Developer Intern",
+            "company": "Georgia Games",
+            "time": [
+                {
+                    "date": "May 2020 – July 2020",
+                    "location": "Atlanta, GA"
+                }
+            ],
+            "skills": "HTML, CSS, JavaScript",
+            "task": [
+                "Collaborating on the design, development, and maintenance of Georgia Games to ensure consistent quality and user satisfaction.",
+                "Developed user interfaces that were designed to maximize user satisfaction through a focus on responsive design and optimal user experience",
+                "Key achievement: Successfully developed a responsive web application that displayed real-time information on all sporting events."
+            ]
+        },
+        {
+            "title": "Undergraduate Research VIP",
+            "company": "VoterTech",
+            "time": [
+                {
+                    "date": "January 2020 – May 2020",
+                    "location": "Georgia Institute of Technology"
+                }
+            ],
+            "skills": "React Native, JavaScript, CSS, Expo, Figma",
+            "task": [
+                "Played an integral role in the development of a prototype mobile application as a member of the lead team.",
+                "Conducted research and worked closely with crossfunctional teams to develop a mobile application that met user needs and expectations.",
+                "Created user interfaces with a focus on user experience and tailored to meet user needs."
             ]
         },
         {
             "title": "Teaching Assistant",
-            "company": "Trilogy",
-            "date": "07/2021 - 08/2022",
+            "company": "EdX | 2U",
+            "time": [
+                {
+                    "date": "September 2021 – August 2022",
+                    "location": "University of Miami"
+                },
+                {
+                    "date": "April 2023 – June 2023",
+                    "location": "University of New Brunswick"
+                }
+            ],
             "task": [
-                "TA for the University of Miami Full-Stack Flex Web Development program",
-                "Assist students with their projects and homework during class",
-                "Reviewing and debugging student's code",
-                "Subject include Bootstrap, CSS, Express.js, HTML, JavaScript, jQuery, MongoDB, MySQL, Node.js, React.js"
+                "Provide tailored, one-on-one student support through office hours on skills development and career resources.",
+                "Supported the lead instructor in delivering instruction and grade projects.",
+                "Support student project portfolio development through the ideation of tangible social impact projects and advisory support at all stages of project development (e.g., planning, process management, development, testing, etc. )",
+                "Assist students with any problems with their assignments/projects three times a week and in HTML, CSS, JavaScript, MySQL, React, Node, Express, Firebase, Bootstrap, Git & GitHub, Heroku, Python, Java, MongoDB"
             ]
         }
     ]
